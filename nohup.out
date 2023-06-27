@@ -71,3 +71,30 @@ zmq.error.ZMQError: Socket operation on non-socket
 [W 09:11:18.823 NotebookApp] 403 GET /api/sessions?1687857078805 (127.0.0.1) 6.730000ms referer=None
 [W 09:11:18.825 NotebookApp] Forbidden
 [W 09:11:18.826 NotebookApp] 403 GET /api/kernelspecs?1687857078819 (127.0.0.1) 0.780000ms referer=None
+[W 09:37:29.771 NotebookApp] Error loading server extension jupyter_lsp
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/notebook/notebookapp.py", line 2050, in init_server_extensions
+        func(self)
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_lsp/serverextension.py", line 76, in load_jupyter_server_extension
+        nbapp.io_loop.call_later(0, initialize, nbapp, virtual_documents_uri)
+    AttributeError: 'NotebookApp' object has no attribute 'io_loop'
+[W 2023-06-27 09:37:29.904 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-06-27 09:37:29.904 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-06-27 09:37:29.907 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.10/dist-packages/jupyterlab
+[I 2023-06-27 09:37:29.907 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2023-06-27 09:37:29.908 LabApp] Extension Manager is 'pypi'.
+[I 09:37:29.911 NotebookApp] The port 8888 is already in use, trying another port.
+[I 09:37:29.911 NotebookApp] The port 8889 is already in use, trying another port.
+[I 09:37:29.912 NotebookApp] Serving notebooks from local directory: /home/masa1357/gitfile/kaggle_clrp_1st_place_solution
+[I 09:37:29.912 NotebookApp] Jupyter Notebook 6.5.4 is running at:
+[I 09:37:29.912 NotebookApp] http://localhost:8890/?token=3c5e65a24ce16db21f4b4de44102b127dc5dbf5745cd8dd9
+[I 09:37:29.912 NotebookApp]  or http://127.0.0.1:8890/?token=3c5e65a24ce16db21f4b4de44102b127dc5dbf5745cd8dd9
+[I 09:37:29.912 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 09:37:29.915 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///root/.local/share/jupyter/runtime/nbserver-125695-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=3c5e65a24ce16db21f4b4de44102b127dc5dbf5745cd8dd9
+     or http://127.0.0.1:8890/?token=3c5e65a24ce16db21f4b4de44102b127dc5dbf5745cd8dd9
+[I 09:38:50.273 NotebookApp] Kernel started: 3c25ba64-a244-4224-87e3-f761b258fb8f, name: python3
