@@ -1,25 +1,25 @@
 CLRP_A_MODEL_SUMMARY.pdf
 
-#data/training/cv/*
+data/training/cv/*
 #!data/training/cv/.gitkeep
 
 data/training/original/*
-!data/training/original/.gitkeep
+#!data/training/original/.gitkeep
 
 data/training/bs/*
-!data/training/bs/.gitkeep
+#!data/training/bs/.gitkeep
 
 data/external/*
-!data/external/.gitkeep
+#!data/external/.gitkeep
 
 data/preprocessed/*
-!data/preprocessed/.gitkeep
+#!data/preprocessed/.gitkeep
 
 data/test/*
-!data/test/.gitkeep
+#!data/test/.gitkeep
 
 embeddings/*
-!embeddings/.gitkeep
+#!embeddings/.gitkeep
 
 models/*
-!models/.gitkeep
+#!models/.gitkeep
