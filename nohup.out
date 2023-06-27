@@ -1,0 +1,73 @@
+[W 09:10:09.738 NotebookApp] Error loading server extension jupyter_lsp
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/notebook/notebookapp.py", line 2050, in init_server_extensions
+        func(self)
+      File "/usr/local/lib/python3.10/dist-packages/jupyter_lsp/serverextension.py", line 76, in load_jupyter_server_extension
+        nbapp.io_loop.call_later(0, initialize, nbapp, virtual_documents_uri)
+    AttributeError: 'NotebookApp' object has no attribute 'io_loop'
+[W 2023-06-27 09:10:09.875 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2023-06-27 09:10:09.875 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2023-06-27 09:10:09.879 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.10/dist-packages/jupyterlab
+[I 2023-06-27 09:10:09.879 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2023-06-27 09:10:09.879 LabApp] Extension Manager is 'pypi'.
+[I 09:10:09.882 NotebookApp] The port 8888 is already in use, trying another port.
+[I 09:10:09.883 NotebookApp] Serving notebooks from local directory: /root/gitfile/kaggle_clrp_1st_place_solution
+[I 09:10:09.883 NotebookApp] Jupyter Notebook 6.5.4 is running at:
+[I 09:10:09.883 NotebookApp] http://localhost:8889/?token=220364a8198969295bfb57e3673bc25619cc7c5b3cba199c
+[I 09:10:09.883 NotebookApp]  or http://127.0.0.1:8889/?token=220364a8198969295bfb57e3673bc25619cc7c5b3cba199c
+[I 09:10:09.883 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 09:10:09.886 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///root/.local/share/jupyter/runtime/nbserver-102942-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8889/?token=220364a8198969295bfb57e3673bc25619cc7c5b3cba199c
+     or http://127.0.0.1:8889/?token=220364a8198969295bfb57e3673bc25619cc7c5b3cba199c
+[W 09:10:53.468 NotebookApp] Forbidden
+[W 09:10:53.468 NotebookApp] 403 GET /api/kernelspecs?1687857053452 (127.0.0.1) 2.360000ms referer=None
+[W 09:10:53.468 NotebookApp] Forbidden
+[W 09:10:53.469 NotebookApp] 403 GET /api/kernels?1687857053454 (127.0.0.1) 2.440000ms referer=None
+[W 09:10:53.477 NotebookApp] Forbidden
+[W 09:10:53.477 NotebookApp] 403 GET /api/kernels?1687857053463 (127.0.0.1) 0.740000ms referer=None
+[W 09:10:53.478 NotebookApp] Forbidden
+[W 09:10:53.479 NotebookApp] 403 GET /api/sessions?1687857053465 (127.0.0.1) 1.670000ms referer=None
+[W 09:10:53.484 NotebookApp] Forbidden
+[W 09:10:53.485 NotebookApp] 403 GET /api/kernelspecs?1687857053476 (127.0.0.1) 0.730000ms referer=None
+[I 09:11:08.589 NotebookApp] Kernel started: 796e5563-da4b-45af-bfcf-ad662384e1d3, name: python3
+[E 09:11:18.623 NotebookApp] Uncaught exception in zmqstream callback
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.10/dist-packages/zmq/eventloop/zmqstream.py", line 634, in _handle_events
+        self._handle_recv()
+      File "/usr/local/lib/python3.10/dist-packages/zmq/eventloop/zmqstream.py", line 653, in _handle_recv
+        msg = self.socket.recv_multipart(zmq.NOBLOCK, copy=self._recv_copy)
+      File "/usr/local/lib/python3.10/dist-packages/zmq/sugar/socket.py", line 807, in recv_multipart
+        while self.getsockopt(zmq.RCVMORE):
+      File "zmq/backend/cython/socket.pyx", line 478, in zmq.backend.cython.socket.Socket.get
+      File "zmq/backend/cython/socket.pyx", line 138, in zmq.backend.cython.socket._check_closed
+    zmq.error.ZMQError: Socket operation on non-socket
+Exception in callback None()
+handle: <Handle cancelled>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.10/dist-packages/tornado/platform/asyncio.py", line 192, in _handle_events
+    handler_func(fileobj, events)
+  File "/usr/local/lib/python3.10/dist-packages/zmq/eventloop/zmqstream.py", line 634, in _handle_events
+    self._handle_recv()
+  File "/usr/local/lib/python3.10/dist-packages/zmq/eventloop/zmqstream.py", line 653, in _handle_recv
+    msg = self.socket.recv_multipart(zmq.NOBLOCK, copy=self._recv_copy)
+  File "/usr/local/lib/python3.10/dist-packages/zmq/sugar/socket.py", line 807, in recv_multipart
+    while self.getsockopt(zmq.RCVMORE):
+  File "zmq/backend/cython/socket.pyx", line 478, in zmq.backend.cython.socket.Socket.get
+  File "zmq/backend/cython/socket.pyx", line 138, in zmq.backend.cython.socket._check_closed
+zmq.error.ZMQError: Socket operation on non-socket
+[W 09:11:18.818 NotebookApp] Forbidden
+[W 09:11:18.818 NotebookApp] 403 GET /api/kernelspecs?1687857078794 (127.0.0.1) 5.360000ms referer=None
+[W 09:11:18.820 NotebookApp] Forbidden
+[W 09:11:18.820 NotebookApp] 403 GET /api/kernels?1687857078798 (127.0.0.1) 6.240000ms referer=None
+[W 09:11:18.821 NotebookApp] Forbidden
+[W 09:11:18.821 NotebookApp] 403 GET /api/kernels?1687857078802 (127.0.0.1) 6.490000ms referer=None
+[W 09:11:18.822 NotebookApp] Forbidden
+[W 09:11:18.823 NotebookApp] 403 GET /api/sessions?1687857078805 (127.0.0.1) 6.730000ms referer=None
+[W 09:11:18.825 NotebookApp] Forbidden
+[W 09:11:18.826 NotebookApp] 403 GET /api/kernelspecs?1687857078819 (127.0.0.1) 0.780000ms referer=None
