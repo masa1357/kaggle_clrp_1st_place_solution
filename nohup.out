@@ -98,3 +98,4 @@ zmq.error.ZMQError: Socket operation on non-socket
         http://localhost:8890/?token=3c5e65a24ce16db21f4b4de44102b127dc5dbf5745cd8dd9
      or http://127.0.0.1:8890/?token=3c5e65a24ce16db21f4b4de44102b127dc5dbf5745cd8dd9
 [I 09:38:50.273 NotebookApp] Kernel started: 3c25ba64-a244-4224-87e3-f761b258fb8f, name: python3
+[I 09:49:38.005 NotebookApp] Starting buffering for 3c25ba64-a244-4224-87e3-f761b258fb8f:93c5f0e6-6fec-4b22-9c95-794a75f48a53
